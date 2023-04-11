@@ -42,7 +42,7 @@ export const RegisterModal = () => {
     const onToggle = useCallback(()=>{
         RegisterModal.onClose()
         LoginModal.onOpen()
-    },[RegisterModal,UseLoginModal])
+    },[RegisterModal,LoginModal])
 
     const onSubmit: SubmitHandler<FieldValues> = (data) =>{
         setIsLoading(true)
@@ -69,7 +69,6 @@ export const RegisterModal = () => {
     const footerContent = (
         <div className='flex flex-col gap-4 mt-3'>
             <MainButton onClick={()=>signIn('google')} label='Continue with Google' Icon={FcGoogle} outline  />
-            <MainButton onClick={()=>signIn('github')} label='Continue with Github' Icon={AiFillGithub} outline  />
 
             <div className="text-neutral-500 text-center mt-4 font-light">
                 <div className='flex flex-row gap-2 items-center justify-center'>

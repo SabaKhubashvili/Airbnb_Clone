@@ -36,7 +36,7 @@ export const ReservationsClient = ({
             .finally(()=>{
                 setDeletingId('')
             })
-    },[setDeletingId,axios,router])
+    },[setDeletingId,router])
 
   return (
     <Container>

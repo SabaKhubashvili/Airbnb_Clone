@@ -50,7 +50,7 @@ const useFavorite = ({listingId,currentUser}:Props) =>{
             toast.error('Something went wrong')
         }
         
-    },[currentUser,hasFavorited,loginModal,router,toast,listingId])
+    },[currentUser,hasFavorited,loginModal,router,listingId])
     return{
         hasFavorited,
         toggleFavorite

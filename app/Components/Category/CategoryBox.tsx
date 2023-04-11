@@ -31,7 +31,7 @@ export const CategoryBox = ({label,description,icon:Icon,selected}:Props) => {
     })
 
     router.push(url)
-   },[router,params,label])
+   },[router,label,selected])
   return (
     <div
     onClick={handleClick}

@@ -5,7 +5,7 @@ interface paramsInterface{
     userId?:string,
     authorId?:string
 }
-export default async function(params:paramsInterface){
+export default async function getReservations(params:paramsInterface){
     try{
 
         const {listingId, userId, authorId} = params

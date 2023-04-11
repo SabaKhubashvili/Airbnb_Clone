@@ -108,7 +108,7 @@ export const RentModal = () => {
       dynamic(() => import("../Maps/Map"), {
         ssr: false,
       }),
-    [location]
+    []
   );
 
   const setCustomValue = (id: string, value: any) => {

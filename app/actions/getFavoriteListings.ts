@@ -3,7 +3,7 @@ import getCurrentUser from './getCurrentUser'
 
 
 
-export default async function(){
+export default async function getFavoriteListings(){
     try{
         const currentUser = await getCurrentUser();
         if(!currentUser){
