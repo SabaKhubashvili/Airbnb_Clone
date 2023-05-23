@@ -12,7 +12,7 @@ export interface IlistingsParmas{
 }
 
 export async function getListings(params:IlistingsParmas){
- try{
+
     const {
         userId,
         guestCount,
@@ -71,8 +71,8 @@ export async function getListings(params:IlistingsParmas){
     }
 
      const listings = await prisma.listing.findMany({
-        where:query,
-         orderBy:{
+        where:query, 
+        orderBy:{
             createdAt:'desc',
         }
     })
@@ -83,7 +83,5 @@ export async function getListings(params:IlistingsParmas){
     }))
     
     return safeListings 
-}catch(error:any){
-    throw new Error(error)
-}
+
 }   

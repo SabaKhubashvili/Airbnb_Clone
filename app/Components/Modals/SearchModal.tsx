@@ -19,6 +19,7 @@ enum Steps{
 }
 
 export const SearchModal = () => {
+  
     const router = useRouter()
     const params = useSearchParams()
     const searchModal = useSearchModal();

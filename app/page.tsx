@@ -13,6 +13,8 @@ interface Props{
 const Home = async({searchParams}:Props) => {
 
   const listings = await getListings(searchParams)
+  console.log(listings);
+  
   const currentUser = await getCurrentUser();
 
   if(listings.length <= 0) {

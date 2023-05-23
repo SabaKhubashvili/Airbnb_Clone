@@ -13,7 +13,7 @@ export const Avatar = ({src}:Props) => {
     height={30}
     width={30}
     alt="avatar"
-    src={src || '/images/placeholder.webp'}
+    src={src || '/Images/placeholder.webp'}
     draggable='true'/>
   )
 }

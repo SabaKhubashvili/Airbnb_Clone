@@ -1,4 +1,4 @@
-"use client";
+  "use client";
 import React, { useCallback } from "react";
 import {IoMdClose} from 'react-icons/io'
 import { MainButton } from "../Buttons";
@@ -29,7 +29,7 @@ export const Modal = ({
   secondaryLabel,
 }: Props) => {
 
-  const [showModal, setShowModal] = React.useState(isOpen);
+    const [showModal, setShowModal] = React.useState(isOpen);
   
   React.useEffect(() => {
     setShowModal(isOpen);
