@@ -12,6 +12,6 @@ export const Logo = () =>{
         className="hidden md:block cursor-pointer w-auto h-auto"
         height={100}
         width={100}
-        src='/Images/logo.webp'/>
+        src='/images/logo.webp'/>
     )
 }
