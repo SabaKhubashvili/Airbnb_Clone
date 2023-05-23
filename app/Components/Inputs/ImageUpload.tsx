@@ -12,7 +12,7 @@ interface Props{
     value:string
 }
 
-export const ImageInput = ({
+export const ImageUpload = ({
     onChange,
     value
 }:Props) => {
